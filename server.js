@@ -112,7 +112,7 @@ app.use('*', function(req, res) {
 });
 
 // closeServer needs access to a server object, but that only
-// gets created when `runServer` runs, so we declare `server` here
+// gets createddd when `runServer` runs, so we declare `server` here
 // and then assign a value to it in run
 let server;
 
