@@ -5,6 +5,7 @@ const morgan = require('morgan');
 
 const {DATABASE_URL, PORT} = require('./config');
 const {BlogPost} = require('./models');
+const {TEST_DATABASE_URL} = require('./config');
 
 const app = express();
 
