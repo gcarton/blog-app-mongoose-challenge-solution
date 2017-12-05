@@ -19,7 +19,7 @@ app.get('/posts', (req, res) => {
   BlogPost
     .find()
     .then(posts => {
-      res.json(posts.map(post => post.apiRepr()));
+      res.status(200).json(posts.map(post => post.apiRepr()));
     })
     .catch(err => {
       console.error(err);
@@ -158,4 +158,4 @@ if (require.main === module) {
   runServer().catch(err => console.error(err));
 };
 
-module.exports = {runServer, app, closeServer};
+module.exports = {app, runServer, closeServer};
